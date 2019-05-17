@@ -1,0 +1,2 @@
+class PrimerController < ApplicationController
+end

@@ -1,0 +1,57 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /* 基本設定　320px基準 */
+ *{
+  margin: 0;
+  padding: 0;
+ }
+ a{
+ text-decoration: none;
+ }
+ ul, ol {
+ list-style: none;
+ }
+ img {
+  vertical-align : middle;
+  max-width : 100%;
+ }
+ html {
+  font-size : 75%;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  line-height: 1.5em;
+ }
+
+ /* header設定 */
+ #header {
+   display: flex;
+   height: 50px;
+   line-height: 50px;
+   width: 100%;
+ }
+ #header a {
+   color: black;
+ }
+ #logo {
+   margin: 0 30% 0 5%;
+   width: 30%;
+ }
+ #header-menu {
+   display: flex;
+   justify-content: space-between;
+   width: 70%;
+   margin-right: 5%;
+ }
