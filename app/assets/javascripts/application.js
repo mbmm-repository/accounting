@@ -18,7 +18,86 @@
 //= require jquery_ujs
 
 $(document).on('turbolinks:load', function(){
-  $(".test").hover(function(){
-    $(".test").css("color", "red");
+
+  $('.arrow-right').click(function(){
+    $('.active').removeClass('active');
+
+    var r_index = $('.arrow-right').index($(this));
+    var r_indexx = r_index + 1
+
+    $('.change-slide').show();
+
+    if (r_indexx == 0) {
+      $('.arrow-left').hide();
+    } else if (r_indexx == $('.slide').length - 1) {
+      $('.arrow-right').hide();
+    }
+
+    $('.slide').eq(r_indexx).addClass('active');
   });
+
+  $('.arrow-left').click(function(){
+    $('.active').removeClass('active');
+
+    var l_index = $('.arrow-left').index($(this));
+    var l_indexx = l_index - 1
+
+    $('.change-slide').show();
+
+    if (l_indexx == 0) {
+      $('.arrow-left').hide();
+    } else if (l_indexx == $('.slide').length - 1) {
+      $('.arrow-right').hide();
+    }
+
+    $('.slide').eq(l_indexx).addClass('active');
+  });
+
+  $('html').keyup(function(e){
+        switch(e.which){
+          case 39: // Key[→]
+          var r_index = $('.slide').index($('.active'));
+          var r_indexx = r_index + 1;
+
+          console.log(r_index);
+
+          if (r_indexx < $('.slide').length) {
+            $('.active').removeClass('active');
+
+            $('.change-slide').show();
+
+            if (r_indexx == 0) {
+              $('.arrow-left').hide();
+            } else if (r_indexx == $('.slide').length - 1) {
+              $('.arrow-right').hide();
+            }
+
+            $('.slide').eq(r_indexx).addClass('active');
+
+
+            break;
+          }
+        }
+        switch(e.which){
+          case 37: // Key[←]
+          var l_index = $('.slide').index($('.active'));
+          var l_indexx = l_index - 1;
+
+          if (l_indexx >= 0){
+            $('.active').removeClass('active');
+
+            $('.change-slide').show();
+
+            if (l_indexx == 0) {
+              $('.arrow-left').hide();
+            } else if (l_indexx == $('.slide').length - 1) {
+              $('.arrow-right').hide();
+            }
+
+            $('.slide').eq(l_indexx).addClass('active');
+            break;
+          }
+        }
+    });
 })
+// console.log(l_indexx); デバッグ
