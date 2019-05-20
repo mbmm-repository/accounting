@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accounting</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.css">
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+<div id="chapter001-1">
+  <div class="d-flex">
+    <h2>損益計算書</h2>
+    <h3>（勘定式）</h3>
+    <p>(単位：円)</p>
+    <table>
+      <tr>
+        <th>勘定科目</th>
+        <th>金額</th>
+        <th>勘定科目</th>
+        <th>金額</th>
+      </tr>
+      <tr>
+        <td>仕入</td>
+        <td>1,000</td>
+        <td>売上</td>
+        <td>1,700</td>
+      </tr>
+      <tr>
+        <td>給料</td>
+        <td>500</td>
+        <td>受取家賃</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>旅費交通費</td>
+        <td>200</td>
+        <td>受取手数料</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>通信費</td>
+        <td>150</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>当期純利益</td>
+        <td>150</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>合計</td>
+        <td>2,000</td>
+        <td>合計</td>
+        <td>2,000</td>
+      </tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>
