@@ -1,6 +1,6 @@
 <div id="cover"></div>
 
-<!-- templateType B -->
+<!-- スライド１ -->
 <div class="slide active">
   <div class="content">
     <div class="t-type-a">
@@ -14,10 +14,12 @@
     </div>
   </div>
 
+  <i class="fa fa-times-circle "></i>
   <div class="change-slide arrow-left first"></div>
   <div class="change-slide arrow-right"></div>
 </div>
 
+<!-- スライド２ -->
 <div class="slide">
   <div class="content">
     <div class="title">
@@ -39,10 +41,12 @@
     </div>
   </div>
 
+  <i class="fa fa-times-circle "></i>
   <div class="change-slide arrow-left"></div>
   <div class="change-slide arrow-right"></div>
 </div>
 
+<!-- スライド３ -->
 <div class="slide">
   <div class="content">
     <div class="title">
@@ -60,10 +64,12 @@
     </div>
   </div>
 
+  <i class="fa fa-times-circle "></i>
   <div class="change-slide arrow-left"></div>
   <div class="change-slide arrow-right"></div>
 </div>
 
+<!-- スライド４ -->
 <div class="slide">
   <div class="content">
     <div class="title">
@@ -81,10 +87,12 @@
     </div>
   </div>
 
+  <i class="fa fa-times-circle "></i>
   <div class="change-slide arrow-left"></div>
   <div class="change-slide arrow-right"></div>
 </div>
 
+<!-- スライド５ -->
 <div class="slide">
   <div class="content">
     <div class="title">
@@ -96,9 +104,213 @@
     </div>
   </div>
 
+  <i class="fa fa-times-circle "></i>
   <div class="change-slide arrow-left"></div>
   <div class="change-slide arrow-right"></div>
 </div>
+
+<!-- chapter001問題 -->
+<div class="q-content">
+  <div class="t-type-q">
+    <div class="content-wrapper">
+
+      <div class="question">
+        <ul class="question-nav">
+          <li class="q-menu nav">問題1</li>
+          <li class="q-menu">問題2</li>
+        </ul>
+        <h4 class="btn-openanswer">答えをみる</h4>
+        <div class="question-content show">
+          <p>下記のB/S、P/Lよりを会社の経営成績を表す儲けを解答欄に入力してください。（単位は省略してください）</p>
+          <iframe src="http://localhost:3000/iframe/chapter001_1" frameborder="0" width="100%" height="65%"></iframe>
+          <div class="account-index">
+            <p>※勘定科目は以下の中から選択すること</p>
+            <div class="account-content">
+              <p>仕入&emsp;給料&emsp;旅費交通費&emsp;通信費&emsp;当期純利益<br />売上&emsp;受取家賃&emsp;受取手数料</p>
+              <p>現金&emsp;受取手形&emsp;売掛金&emsp;建物&emsp;車両<br />支払手形&emsp;買掛金&emsp;借入金&emsp;資本金&emsp;利益剰余金</p>
+            </div>
+          </div>
+        </div>
+        <div class="question-content">
+          <p>下記B/S、P/Lより総資産の財政状態を表す金額を解答欄に入力してください。（単位は省略してください）</p>
+          <iframe src="http://localhost:3000/iframe/chapter001_1" frameborder="0" width="100%" height="65%"></iframe>
+          <div class="account-index">
+            <p>※勘定科目は以下の中から選択すること</p>
+            <div class="account-content">
+              <p>仕入&emsp;給料&emsp;旅費交通費&emsp;通信費&emsp;当期純利益<br />売上&emsp;受取家賃&emsp;受取手数料</p>
+              <p>現金&emsp;受取手形&emsp;売掛金&emsp;建物&emsp;車両<br />支払手形&emsp;買掛金&emsp;借入金&emsp;資本金&emsp;利益剰余金</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="nextchapter-nav">
+          <i class="fa fa-times-circle close-btn"></i>
+          <h2>全問正解です！</h2>
+          <p>次のチャプターは簡易的にB/S、P/Lを作っていきます。</p>
+          <h4 class="btn-commentary">答えと解説を見る</h4>
+          <%= link_to "次のチャプターへ",primer_chapter001_path, class: "btn-nextchapter" %>
+        </div>
+
+        <div class="answercheck-nav">
+          <i class="fa fa-times-circle close-btn"></i>
+          <h2>答えを見ますか？</h2>
+          <p>答えを見ない場合はいいえまたはバツボタンを押してください。</p>
+          <h4 class="btn-commentary">答えと解説を見る</h4>
+          <h4 class="btn-no">いいえ</h4>
+        </div>
+      </div>
+
+      <div class="answer">
+        <div class="answer-content show">
+          <div class="answer-title">解答欄1</div>
+          <div class="answer-wrapper">
+            <p>左記のB/S、P/Lよりを会社の経営成績を表す儲けを回答欄に入力してください。（単位は省略してください）</p>
+            <form id="my-form">
+              <label>勘定科目名：</label>
+              <input type="text" name="chapter001-1-1" />
+              <label>金額：</label>
+              <input type="int" name="chapter001-1-2" value="" />
+            </form>
+            <h5 class="mistake1">第1問の回答が間違ってます。 </h5>
+            <h5 class="mistake2">第2問の回答が間違ってます。 </h5>
+            <h5 class="mistake3">第3問の回答が間違ってます。 </h5>
+            <div class="answer-bottom">
+              <h4 class="btn-nextquestion">次の問題へ</h4>
+            </div>
+          </div>
+        <div class="hint">
+          <div class="hint-title">問題1のヒントです。</div>
+          <div class="hint-content">
+            <p>会社の儲けを表すのはP/Lです。</p>
+            <h4 class="btn-slide slide001-3">スライド参照</h4>
+          </div>
+        </div>
+      </div>
+
+        <div class="answer-content">
+          <div class="answer-title">解答欄2</div>
+          <div class="answer-wrapper">
+            <p>左記B/S、P/Lより総資産の財政状態を表す金額を回答欄に入力してください。（単位は省略してください）</p>
+            <form id="my-form">
+              <label>金額：</label>
+              <input type="int" name="chapter001-1-3" value="" />
+            </form>
+            <h5 class="mistake1">第1問の回答が間違ってます。 </h5>
+            <h5 class="mistake2">第2問の回答が間違ってます。 </h5>
+            <h5 class="mistake3">第3問の回答が間違ってます。 </h5>
+            <div class="answer-bottom">
+              <h4 class="btn-backquestion">前の問題へ</h4>
+              <h4 class="btn-answer001">回答する</h4>
+            </div>
+          </div>
+          <div class="hint">
+            <div class="hint-title">問題2のヒントです。</div>
+            <div class="hint-content">
+              <p>会社の財政状態を表すのB/Sです。</p>
+              <h4 class="btn-slide slide001-4">スライド参照</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="answer-check">
+  <div class="content">
+    <div class="title">
+      <h1>◎答えと解説</h1>
+    </div>
+    <div class="t-type-c">
+      <div class="t-p-content">
+        <div class="text-content">
+          <h2>解答</h2>
+          <h3>『問題1』</h3>
+          <h3>勘定科目：当期純利益　　金額：150円</h3>
+          <h3>『問題2』</h3>
+          <h3>金額：12,300円</h3>
+        </div>
+        <div class="commentary">
+          <h2>解説</h2>
+          <h3>『問題1』</h3>
+          <h3>・一般的に儲けと言えば『利益』と考えられる為、<br />&emsp;P/L上にある利益項目は『当期純利益』となります。</h3>
+          <h3>・金額は当期純利益の隣にある150円となります。</h3>
+          <h3>『問題2』</h3>
+          <h3>・次チャプター以降で勉強しますが、B/Sの左側は資産を表しています。<br />&emsp;その合計金額12,300円となります。</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <i class="fa fa-times-circle "></i>
+  <div class="change-answer answer-leftr"></div>
+  <!-- <div class="change-answer answer-right"></div>答えと解答スライド1枚の為非表示 -->
+</div>
+
+
+<!-- <div class="answer-check">
+  <div class="content">
+    <div class="title">
+      <h1>2</h1>
+    </div>
+    <div class="t-type-c">
+      <div class="t-p-content">
+        <div class="text-content">
+          <h2>解答</h2>
+          <h3>『問題1』</h3>
+          <h3>勘定科目：当期純利益　　金額：150円</h3>
+          <h3>『問題2』</h3>
+          <h3>金額：12,300円</h3>
+        </div>
+        <div class="commentary">
+          <h2>解説</h2>
+          <h3>『問題1』</h3>
+          <h3>・一般的に儲けと言えば『利益』と考えられる為、<br />&emsp;P/L上にある利益項目は『当期純利益』となります。</h3>
+          <h3>・金額は当期純利益の隣にある150円となります。</h3>
+          <h3>『問題2』</h3>
+          <h3>・次チャプター以降で勉強しますが、B/Sの左側は資産を表しています。<br />&emsp;その合計金額12,300円となります。</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <i class="fa fa-times-circle "></i>
+  <div class="change-answer answer-left"></div>
+  <div class="change-answer answer-right"></div>
+</div>
+
+<div class="answer-check">
+  <div class="content">
+    <div class="title">
+      <h1>3</h1>
+    </div>
+    <div class="t-type-c">
+      <div class="t-p-content">
+        <div class="text-content">
+          <h2>解答</h2>
+          <h3>『問題1』</h3>
+          <h3>勘定科目：当期純利益　　金額：150円</h3>
+          <h3>『問題2』</h3>
+          <h3>金額：12,300円</h3>
+        </div>
+        <div class="commentary">
+          <h2>解説</h2>
+          <h3>『問題1』</h3>
+          <h3>・一般的に儲けと言えば『利益』と考えられる為、<br />&emsp;P/L上にある利益項目は『当期純利益』となります。</h3>
+          <h3>・金額は当期純利益の隣にある150円となります。</h3>
+          <h3>『問題2』</h3>
+          <h3>・次チャプター以降で勉強しますが、B/Sの左側は資産を表しています。<br />&emsp;その合計金額12,300円となります。</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <i class="fa fa-times-circle "></i>
+  <div class="change-answer answer-left"></div>
+  <div class="change-answer answer-right"></div>
+</div> -->
+
+
 
 <!-- スライドテンプレート -->
 <!-- <div class="slide">
